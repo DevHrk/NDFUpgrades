@@ -1,2 +1,20 @@
 # NDFUpgrades
-Plugin complementar ao modo Factions no Minecraft, projetado para expandir o sistema do MambaFactions com um sistema de upgrades avançado. Permite que facções evoluam suas habilidades, proteções e recursos, oferecendo melhorias estratégicas, integração com economia, customização de funcionalidades e suporte a múltiplos servidores.
+Plugin complementar ao modo Factions no Minecraft, desenvolvido para expandir o sistema do MambaFactions com upgrades avançados para facções.
+
+✨ Recursos principais:
+
+🚀 Upgrades estratégicos que evoluem habilidades, proteções e recursos das facções
+
+💰 Integração com economia para melhorias balanceadas
+
+🛠️ Customização de funcionalidades conforme o estilo do servidor
+
+🌐 Suporte a múltiplos servidores, garantindo compatibilidade e estabilidade
+
+⚡ Diferenciais:
+
+Torna o gameplay mais dinâmico e competitivo
+
+Fácil instalação e integração com sistemas existentes
+
+Experiência estratégica e imersiva para jogadores e facções
