@@ -1,0 +1,82 @@
+##################################################
+#   #    #  #####   #####  #####  #       #      #
+#   ##   #  #    #  #    # #       #     #       #
+#   #  # #  #    #  #    # ##       #   #        #  
+#   #   ##  #    #  #    # #         # #         #
+#   #    #  #####   #####  #####      #          #
+##################################################
+  
+SQLite:
+  file: "database.db"
+
+Config:
+  display: "§eGerador de Monstros" #Nome do Item do spawner. Recomendo não mudar caso não saiba o que isso faz
+  format: LETRAS # NUMEROS OU LETRAS
+  #Aqui você defini quantos upgrades
+  #Terar lembrando que tem que adicionar
+  #Na config Upgrades!
+  maxlevelupgrades:
+    poder: 2
+    membros: 3
+    mobs: 7
+    blocos: 4
+    attack: 3   
+    defesas: 4
+
+Fragmento:
+  Nome: "&eFragmento de Moeda"
+  Lore:
+    - "&7Ao juntar quatro fragmentos de moedas"
+    - "&7é possível realizar uma junção e"
+    - "&7transformar em &eMoeda&7."
+
+Moeda:
+  Nome: "&eMoeda"
+  Preço: 1 #Tanto que a moeda vai dar, aqui darar de 1 em 1
+  Lore:
+    - "&7Utilize essa moedas para conseguir"
+    - "&7realizar melhorias da facção"
+    - "&7através do &d/f upgrades&7."
+    - "&7Para utilizar, clique com o &fBotão direito&7."
+
+Fragmentos:
+  plantacoes:
+    ativar: true
+    mundos:
+      - 'world'
+      - 'Lobby'
+    type: # PLANTACAO : QUANTIDADE : PORCENTAGEM
+      - 'SUGAR_CANE_BLOCK:1:12.0'
+      
+  mobs:
+    ativar: true
+    mundos:
+      - 'world'
+      - 'Lobby'
+    type: #MOB : QUANTIDADE : PORCENTAGEM
+      - 'COW:1:30.0'
+      - 'ZOMBIE:2:20.0'
+      - 'BLAZE:5:10.0'
+      
+  miner:
+    ativar: true
+    mundos: 
+      - 'Lobby'
+      - 'world'
+      - 'mina'
+    type: #BLOCO : QUANTIDADE : PORCENTAGEM
+      - 'STONE:1:15.0'
+      - 'COAL_ORE:2:10.0'
+      - 'IRON_ORE:3:5.0'
+ 
+RemovedorEfeito:
+  Nome: '&eRemovedor de efeito'
+  Lore:
+    - '&7Utilize esté item para não receber'
+    - '&7os efeitos do upgrade de defesas'
+    - ''
+    - '&7Tempo: 1m.'  
+  Id: 378
+  Data: 0
+  tempo: 60 #Em segundos
+    

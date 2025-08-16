@@ -1,0 +1,146 @@
+#Pode criar upgrades infinitos.
+#SO NÃO CRIA NO UPGRADE DE VOAR E PLANTACOES.
+Upgrades:
+  Voar:
+    upgrade1:
+      title: "titlesub: &eUpgrade Voar:&aComprado"
+      level: 1
+      price: 15 
+      perm: "factions.voar" #Verificação da permissão se for outra troque se não, não funcionarar. 
+      permissao: "nd.fly" #Está permissão você dará ao vip para que o upgrade funcione!
+      comando: "pex user {player} add factions.voar" #Comando que serar executado para dar a permissão
+      
+  Plantacoes:
+    upgrade1:
+      title: "titlesub: &eUpgrade Plantações:&aComprado"
+      level: 1
+      price: 25
+    #porcentagem:comando
+    #porcentagem:{fragmentos}:Quantidade:Mensagem
+    #porcentagem:{moeda}:Quantidade:Mensagem
+    Fungos:  
+      - '100:tell {player} replantou um fungo'
+      - '0.5:give {player} diamond'
+      - '10.0:{fragmentos}:2:&aVocê achou {valor} fragmento(s) de moeda!'
+      
+  poder:
+    upgrade1:
+      title: "&eUpgrade Poder I"
+      level: 1
+      price: 80
+    upgrade2:
+      title: "&eUpgrade Poder II"
+      level: 2
+      price: 120
+      
+  membros:
+    upgrade1:
+      title: "&eUpgrade Membros I"
+      level: 1
+      price: 100
+    upgrade2:
+      title: "&eUpgrade Membros II"
+      level: 2
+      price: 120
+    upgrade3:
+      title: "&eUpgrade Membros III"
+      level: 3
+      price: 150
+      
+  mobs: 
+    upgrade1:
+      title: "&eUpgrade Mobs I" 
+      level: 1
+      type: COW #Tipo. Isso irar geta a lore
+      price: 7
+    upgrade2:
+      title: "&eUpgrade Mobs II"
+      level: 2
+      type: SPIDER
+      price: 12
+    upgrade3:
+      title: "&eUpgrade Mobs III"
+      level: 3
+      type: BLAZE
+      price: 17
+    upgrade4:
+      title: "&eUpgrade Mobs V"
+      level: 4
+      type: ZOMBIE
+      price: 33
+    upgrade5:
+      title: "&eUpgrade Mobs V"
+      level: 5
+      type: SKELETON
+      price: 37
+    upgrade6:
+      title: "&eUpgrade Mobs VI"
+      level: 6
+      type: PIG_ZOMBIE
+      price: 42   
+    upgrade7:
+      title: "&eUpgrade Mobs VII"
+      level: 7
+      type: IRON_GOLEM
+      price: 47         
+      
+  blocos:
+    upgrade1:
+      title: "&eUpgrade Blocos I"
+      level: 1
+      type: STONE
+      price: 120  
+    upgrade2:
+      title: "&eUpgrade Blocos II"
+      level: 2
+      type: ENDER_STONE 
+      price: 150      
+    upgrade3:
+      title: "&eUpgrade Blocos III"
+      level: 3
+      type: OBSIDIAN
+      price: 200   
+    upgrade4:
+      title: "&eUpgrade Blocos VI"
+      level: 4
+      type: BEDROCK
+      price: 220 
+  
+  #Caso queira Adicionar mais copie o nome Upgrade1 e troque apenas o número!
+  attack:
+    upgrade1:
+      title: "&eUpgrade Attack I"
+      level: 1
+      time: 180 #Em segundos
+      price: 60 
+    upgrade2:
+      title: "&eUpgrade Attack II"
+      level: 2
+      time: 120 #Em segundos
+      price: 140 
+    upgrade3:
+      title: "&eUpgrade Attack III"
+      level: 3
+      time: 60 #Em segundos
+      price: 240
+
+  #Caso queira Adicionar mais copie o nome Upgrade1 e troque apenas o número!
+  defesas: #Atenção os efeitos vão se acumulando!
+    upgrade1:
+      title: "&eUpgrade Defesa I"
+      level: 1
+      time: 3 #Level do Efeito
+      type: SLOW #efeito
+      price: 200 
+    upgrade2:
+      title: "&eUpgrade Defesa II"
+      level: 2
+      time: 2 #Level do Efeito
+      type: CONFUSION #efeito
+      price: 380 
+    upgrade3:
+      title: "&eUpgrade Defesa III"
+      level: 3
+      time: 2 #Level do Efeito
+      type: POISON #efeito
+      price: 580

@@ -1,0 +1,128 @@
+#   --------= Comandos =--------
+#
+# console: <comando> - Executa um comando pelo console
+# player: <comando> - Executa um comando pelo player
+#
+#   --------= Mensagens =--------
+#
+# mensagem: <mensagem> - Envia uma mensagem para o player
+# broadcast: <mensagem> - Envia uma mensagem broadcast
+# json: <mensagem> - Envia uma mensagem json
+# actionbar: <mensagem> - Envia uma mensagem actionbar
+# title: <mensagem> - Envia uma mensagem title 
+# titlesub: <título>:<subtítulo> - Envia uma mensagem com title e subtitulo
+#
+#   --------= Menu =--------
+#
+# VOAR - faz a compra do upgrade de voar
+# PLANTACAO - faz a compra do upgrade de plantacao
+# MOBS - acessa o menu do upgrade de mobs
+# PODER - acessa o menu do upgrade de poder
+# MEMBROS - acessa o menu do upgrade de membros
+# BLOCOS - acessa o menu do upgrade de blocos
+# ATTACK - acessa o menu do upgrade de attack
+# DEFESAS - acessa o menu do upgrade de defesas
+# UPGRADES - acessa o menu de upgrades
+# FUNCOES - acessa o menu do upgrade de funcoes
+# RETIRARFRAG - faz a ação de retirar fragmento
+# RESTRINGIR - faz a ação de restringir um efeito
+# TROCARFRAG - faz a ação de trocar os fragmentos
+# PRINCIPAL - Acessa o menu principal
+# RANKINGMOEDAS - Acessa o menu do top moedas
+# CLOSEMENU - Fecha o menu
+#
+menu-upgrade:
+  tamanho: 45 #tamanho do menu
+  nome_menu: "Upgrades - [{tag}]" #nome do menu 
+  itens:
+    poder:
+      name: '&eUpgrades de Poder'
+      lore:
+        - ''
+        - '&7clique aqui para gerenciar este upgrade.'
+        - ''
+      Material: '399:0'
+      slot: 11
+      onClick: 
+      - 'PODER'      
+    
+    membros:
+      name: '&eUpgrades de Membros'
+      lore:
+        - ''
+        - '&7clique aqui para gerenciar este upgrade.'
+        - ''
+      Material: 'd01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f'       
+      slot: 12
+      onClick: 
+      - 'MEMBROS'
+      
+    mobs:
+      name: '&eUpgrades de Mobs'
+      lore:
+        - ''
+        - '&7clique aqui para gerenciar este upgrade.'
+      Material: '52:0'
+      slot: 13
+      onClick: 
+      - 'MOBS'
+      
+    voar:
+      name: '&eUpgrade de Voar'
+      lore:
+        - '&7Ao ativar os membros VIP da'
+        - '&7sua facção poderão utilizar'
+        - '&7o comando /f voar.'
+        - ''
+        - '{statusvoar}'
+        - ''
+      Material: '288:0'
+      slot: 14
+      onClick: 
+      - 'VOAR'
+      
+    plantacao:
+      name: '&eUpgrade de Plantação'
+      lore:
+        - '&7Ao ativar as plantações de fungo que os membros da sua'
+        - '&7facção quebrarem irão replantar automaticamente.'
+        - ''
+        - '{statusplantacao}'
+        - ''
+      Material: '88:0'
+      slot: 15
+      onClick: 
+      - 'PLANTACAO'
+  
+    blocos:
+      name: "&eUpgrades de Blocos"
+      lore:
+        - ''
+        - '&7clique aqui para gerenciar este upgrade.'
+        - ''
+      Material: 'e2e1dfde728550d475478fd0ba92c25143544201b0c4cf89201b2ed2c824c3c5'       
+      slot: 23
+      onClick: 
+      - 'BLOCOS'
+
+    attack:
+      name: "&eUpgrades de Attack"
+      lore:
+        - ''
+        - '&7clique aqui para gerenciar este upgrade.'
+        - ''
+      Material: 'eafb83c5c4799325369f0a2ab6c4ce0ef1edff8551d7ef8f7e84a9fc21b14387'       
+      slot: 21
+      onClick: 
+      - 'ATTACK'
+    
+    defesas:
+      name: "&eUpgrades das Defesas"
+      lore:
+        - ''
+        - '&7clique aqui para gerenciar este up grade.'
+        - ''
+      Material: '85c4effba4d99f437314c8a8755856713fd85dcd15b3690c749ce1e44474'       
+      slot: 22
+      onClick: 
+      - 'DEFESAS'

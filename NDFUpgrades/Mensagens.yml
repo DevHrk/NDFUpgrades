@@ -1,0 +1,62 @@
+#   --------= Mensagens =--------
+#
+# mensagem: <mensagem> - Envia uma mensagem para o player
+# broadcast: <mensagem> - Envia uma mensagem broadcast
+# json: <mensagem> - Envia uma mensagem json
+# actionbar: <mensagem> - Envia uma mensagem actionbar
+# title: <mensagem> - Envia uma mensagem title 
+# titlesub: <título>:<subtítulo> - Envia uma mensagem com title e subtitulo
+#
+Comando-Errado:
+  fragmento: 'mensagem: &cUtilize /givefragmento <jogador> <valor>'
+  moeda: 'mensagem: &cUtilize /givemoeda <jogador> <valor>'
+  removedor: 'mensagem: &cUtilize /giveremovedor <jogador> <valor>'
+
+removedor:
+  enviado: 'mensagem: &aVocê enviou &6{quantia} &a removedor para &6 {player}&a.'
+  ZonaProtegida: 'mensagem: &cVocê não pode usar esté item em zona protegida!'
+  TempoRestante: 'actionbar: &aRemovedor:&e {tempo}'
+  Usado: 'mensagem: &aItem utilizado com sucesso!'  
+  Acabou: 'mensagem: &cAcabou o tempo!'  
+  
+Fragmentos:
+  enviado: 'mensagem: &aVocê enviou &6{quantia} &a fragmentos para &6 {player}&a.'
+  semfragmentos: 'mensagem: &cVocê não possui fragmentos suficientes.'
+  achoufragmento: 'mensagem: &aVocê achou {valor} fragmento(s) de moeda!'
+
+Moeda:
+  enviado: 'mensagem: &aVocê enviou &6{quantia} &a moedas para &6 {player} &a.'
+  depositoumoeda: 'mensagem: &aVocê depositou {amount} moeda no banco de sua facção'
+  retiroumoedas: 'mensagem: &aFoi feita a retirada de {amount} moedas do banco de sua facção.'
+  semmoedas: 'mensagem: &cSua facção não tem moedas o suficiente.'
+  Utilizar: 'mensagem: &cVocê não pode utilizar esté item caso não tenha uma facção!'
+  Colocar: 'mensagem: &cVocê não pode colocar esté item no chão!' # Caso não queira msg coloque ''
+
+Replantar:
+  Fungo: 'mensagem: &cVocê só pode replantar e plantar fungos no claim da sua facção.'
+  FungoInv: 'mensagem: &cVocê precisa de um fungo no inventário.'
+
+Spawners:
+  PlaceBlock: 'mensagem: &cVocê precisa de uma facção, para colocar um gerador!'
+  Nivel: 'mensagem: &cVocê precisa do nivel §f{level} &c no upgrade de mobs para colocar esté spawner.'
+
+Blocos:
+  PlaceBlock: 'mensagem: &cVocê precisa de uma facção, para colocar um bloco especial!'
+  Nivel: 'mensagem: &cVocê precisa do nivel §f{level} &c no upgrade de blocos para colocar este bloco.'
+
+RestringirEfeitos:
+  SemAlido: 'mensagem: &cSua facção não possui aliados.'
+  Sucesso: 'mensagem: &aRestringir efeitos alterado com sucesso.'
+
+mensagem:
+  possuirfac: 'mensagem: &cVocê precisa possuir uma facção.'
+  menuaberto: 'mensagem: &aSistema de Upgrades aberto.'
+  superior: 'mensagem: &cVocê precisa ser Capitão ou superior.'
+  invlotado: 'mensagem: &cVocê não pode executar essa ação, pois seu inventário está lotado.'
+  semfac: 'mensagem: &cVocê precisa de facção, para executar esta ação.'
+  levelmax: 'mensagem: &cSua facção atingiu o nivel maximo, por tanto não pode comprar mais niveis.'
+  upgradecomprado: 'mensagem: &aParabéns, a compra deste nivel foi realizada com sucesso.'
+  semperm: 'mensagem: &cVocê não possui permissão para executar este comando.'
+  jogador: 'mensagem: &cJogador não encontrado.' 
+  
+  

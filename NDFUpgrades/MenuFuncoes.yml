@@ -1,0 +1,76 @@
+#   --------= Comandos =--------
+#
+# console: <comando> - Executa um comando pelo console
+# player: <comando> - Executa um comando pelo player
+#
+#   --------= Mensagens =--------
+#
+# mensagem: <mensagem> - Envia uma mensagem para o player
+# broadcast: <mensagem> - Envia uma mensagem broadcast
+# json: <mensagem> - Envia uma mensagem json
+# actionbar: <mensagem> - Envia uma mensagem actionbar
+# title: <mensagem> - Envia uma mensagem title 
+# titlesub: <título>:<subtítulo> - Envia uma mensagem com title e subtitulo
+#
+#   --------= Menu =--------
+#
+# VOAR - faz a compra do upgrade de voar
+# PLANTACAO - faz a compra do upgrade de plantacao
+# MOBS - acessa o menu do upgrade de mobs
+# PODER - acessa o menu do upgrade de poder
+# MEMBROS - acessa o menu do upgrade de membros
+# BLOCOS - acessa o menu do upgrade de blocos
+# ATTACK - acessa o menu do upgrade de attack
+# DEFESAS - acessa o menu do upgrade de defesas
+# UPGRADES - acessa o menu de upgrades
+# FUNCOES - acessa o menu do upgrade de funcoes
+# RETIRARFRAG - faz a ação de retirar fragmento
+# RESTRINGIR - faz a ação de restringir um efeito
+# TROCARFRAG - faz a ação de trocar os fragmentos
+# PRINCIPAL - Acessa o menu principal
+# RANKINGMOEDAS - Acessa o menu do top moedas
+# CLOSEMENU - Fecha o menu
+#
+Menu-Funcoes:
+  tamanho: 27 #tamanho do menu
+  nome_menu: "[{tag}] Upgrades > Funções " #nome do menu 
+  itens:
+    Retirar: # <-- Não troque o nome "Retirar"
+      name: '&eRetirar Moedas'
+      retirar: 30 #Tanto de moeda que irar remover do banco da facção
+      lore:
+        - '&7Clique aqui para remover 30 moedas, do banco'
+        - '&7de sua facção.'
+        - ''
+        - '&e* Esta ação não tem reverção, então tome cuidado!'
+      Material: '3912d45b1c78cc22452723ee66ba2d15777cc288568d6c1b62a545b29c7187' # URL / ID:DATA
+      slot: 12
+      onClick: 
+      - "RETIRARFRAG"
+    
+    Trocar: # <-- Não troque o nome "Trocar"
+      name: '&eTrocar Fragmentos'
+      trocar: 4 #Tanto de fragmentos que irar trocar por moedas
+      retirar: 1 #Tanto de moeda que irar ganhar ao trocar as moedas
+      lore:
+        - '&7Clique aqui para trocar seus fragmentos'
+        - '&7por moedas'
+        - ''
+        - '&e * Lembrando que você precisa de 4 fragmentos.'
+      Material: 'a99aaf2456a6122de8f6b62683f2bc2eed9abb81fd5bea1b4c23a58156b669' # URL / ID:DATA   
+      slot: 14
+      onClick: 
+      - "TROCARFRAG"
+    
+    Restringir:
+      name: '&eRestringir Efeitos'
+      lore:
+        - '&7Com esta opção ativada, os aliados'
+        - '&7não receberão dano de suas'
+        - '&7defesas.'
+        - ''
+        - '&eAtivado: &f{status}.'
+      Material: '404:0' # URL / ID:DATA
+      slot: 8 
+      onClick: 
+      - "RESTRINGIR"

@@ -1,0 +1,76 @@
+#   --------= Comandos =--------
+#
+# console: <comando> - Executa um comando pelo console
+# player: <comando> - Executa um comando pelo player
+#
+#   --------= Mensagens =--------
+#
+# mensagem: <mensagem> - Envia uma mensagem para o player
+# broadcast: <mensagem> - Envia uma mensagem broadcast
+# json: <mensagem> - Envia uma mensagem json
+# actionbar: <mensagem> - Envia uma mensagem actionbar
+# title: <mensagem> - Envia uma mensagem title 
+# titlesub: <título>:<subtítulo> - Envia uma mensagem com title e subtitulo
+#
+#   --------= Menu =--------
+#
+# VOAR - faz a compra do upgrade de voar
+# PLANTACAO - faz a compra do upgrade de plantacao
+# MOBS - acessa o menu do upgrade de mobs
+# PODER - acessa o menu do upgrade de poder
+# MEMBROS - acessa o menu do upgrade de membros
+# BLOCOS - acessa o menu do upgrade de blocos
+# ATTACK - acessa o menu do upgrade de attack
+# DEFESAS - acessa o menu do upgrade de defesas
+# UPGRADES - acessa o menu de upgrades
+# FUNCOES - acessa o menu do upgrade de funcoes
+# RETIRARFRAG - faz a ação de retirar fragmento
+# RESTRINGIR - faz a ação de restringir um efeito
+# TROCARFRAG - faz a ação de trocar os fragmentos
+# PRINCIPAL - Acessa o menu principal
+# RANKINGMOEDAS - Acessa o menu do top moedas
+# CLOSEMENU - Fecha o menu
+#
+Menu:
+  principal:
+    tamanho: 45 #tamanho do menu
+    nome_menu: '[{tag}] - Upgrades' #nome do menu
+    itens:
+      upgrades:
+        name: '&eUpgrades'
+        lore:
+          - '&7Clique aqui para ver'
+          - '&7os upgrades disponiveis!'
+        Material: '342:0' # URL / ID:DATA
+        slot: 29
+        onClick: 
+        - 'UPGRADES'
+      
+      ranking:
+        name: '&aRanking de Moedas'
+        lore:
+          - '&7Veja as facções com mais moedas'
+          - '&7no servidor.'
+        Material: 'd01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f'       
+        slot: 31      
+        onClick: 
+        - 'RANKINGMOEDAS'
+      
+      outros:
+        name: '&cOutras funções'
+        lore:
+          - '&7Clique aqui para gerenciar outras'
+          - '&7funções disponíveis.'
+        Material: '385:0' # URL / ID:DATA
+        slot: 33       
+        onClick: 
+        - 'FUNCOES'
+      
+      faction:
+        name: '&a{fac}'
+        lore:
+          - '&fmoedas:&7 {moedas}'
+        Material: '{banner}' # URL / ID:DATA / {banner}
+        slot: 13      
+        onClick: 
+        - ''

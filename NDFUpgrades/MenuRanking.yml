@@ -1,0 +1,56 @@
+#   --------= Comandos =--------
+#
+# console: <comando> - Executa um comando pelo console
+# player: <comando> - Executa um comando pelo player
+#
+#   --------= Mensagens =--------
+#
+# mensagem: <mensagem> - Envia uma mensagem para o player
+# broadcast: <mensagem> - Envia uma mensagem broadcast
+# json: <mensagem> - Envia uma mensagem json
+# actionbar: <mensagem> - Envia uma mensagem actionbar
+# title: <mensagem> - Envia uma mensagem title 
+# titlesub: <título>:<subtítulo> - Envia uma mensagem com title e subtitulo
+#
+#   --------= Menu =--------
+#
+# VOAR - faz a compra do upgrade de voar
+# PLANTACAO - faz a compra do upgrade de plantacao
+# MOBS - acessa o menu do upgrade de mobs
+# PODER - acessa o menu do upgrade de poder
+# MEMBROS - acessa o menu do upgrade de membros
+# BLOCOS - acessa o menu do upgrade de blocos
+# ATTACK - acessa o menu do upgrade de attack
+# DEFESAS - acessa o menu do upgrade de defesas
+# UPGRADES - acessa o menu de upgrades
+# FUNCOES - acessa o menu do upgrade de funcoes
+# RETIRARFRAG - faz a ação de retirar fragmento
+# RESTRINGIR - faz a ação de restringir um efeito
+# TROCARFRAG - faz a ação de trocar os fragmentos
+# PRINCIPAL - Acessa o menu principal
+# RANKINGMOEDAS - Acessa o menu do top moedas
+# CLOSEMENU - Fecha o menu
+#
+Menu-Ranking:
+  tamanho: 54 #tamanho do menu
+  nome_menu: 'Top Facções - Moedas' #nome do menu 
+  top:
+    name: '&f{pos}º &7[{tag}]'
+    Material: "{banner}" # {banner} / URL / ID:DATA
+    lore:
+      - ''    
+      - '&fTotal em Moedas: &7{moedas}'
+      - ''
+    slots: "10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34"  
+    BackSlot: "45" #Página anterior
+    NextSlot: "53" #Próxima página
+    
+  itens:
+    voltar:
+      slot: 45
+      Material: '262:0' # URL / ID:DATA
+      name: '&cVoltar'
+      lore: 
+        - '&c'
+      onClick: 
+      - "PRINCIPAL"
